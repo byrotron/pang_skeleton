@@ -1,0 +1,24 @@
+<sktn-website-panel>
+
+    <sktn-menubar website-menu>
+      <sktn-menubar-group>
+        <sktn-menubar-item [link]="true" [routerLink]="['/']" text="Angular Skeleton">
+        </sktn-menubar-item>
+      </sktn-menubar-group>
+
+      <sktn-menubar-group *ngIf="!auth.current_user">
+        <sktn-menubar-item type="spacer"></sktn-menubar-item>
+        <sktn-menubar-item [routerLink]="['/sign-in']" [link]="true" text="Sign In">
+        </sktn-menubar-item>
+        <sktn-menubar-item [routerLink]="['/sign-up']" [link]="true" text="Sign Up">
+        </sktn-menubar-item>
+      </sktn-menubar-group>
+
+      <sktn-menubar-group *ngIf="auth.current_user">
+        <sktn-menubar-item type="spacer"></sktn-menubar-item>
+        <sktn-menubar-item [routerLink]="['/admin']" [link]="true" text="Console"></sktn-menubar-item>
+        <sktn-menubar-item text="Logout" [link]="true" (click)="logout()"></sktn-menubar-item>
+      </sktn-menubar-group>
+    </sktn-menubar>
+
+</sktn-website-panel>

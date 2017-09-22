@@ -1,0 +1,8 @@
+{
+    "name": "byrotron/pang_app",
+    "description": "PHP and Angular skeleton app",
+    "type": "library",
+    "require": {},
+    "license": "MIT",
+    "minimum-stability": "dev"
+}

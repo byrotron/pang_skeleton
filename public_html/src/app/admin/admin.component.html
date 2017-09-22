@@ -1,0 +1,49 @@
+<sktn-admin-panel>
+
+  <sktn-menubar admin-menubar>
+      
+    <sktn-menubar-group>
+
+        <sktn-menubar-item type="icon" icon="fa-bars" (click)="toggleSidenav()">
+        </sktn-menubar-item>
+
+        <sktn-menubar-item type="text" text="Angular Skeleton">
+        </sktn-menubar-item>
+
+    </sktn-menubar-group>
+
+    <sktn-menubar-group>   
+
+        <sktn-menubar-item type="spacer"></sktn-menubar-item>
+
+        <sktn-menubar-item type="icon" icon="fa-cog" [mdMenuTriggerFor]="menu"></sktn-menubar-item>
+
+        <md-menu #menu="mdMenu" class="settings-menu">
+      
+          <button md-menu-item >
+            <span class="fa fa-user"></span>
+            <span>Profile</span>
+          </button>
+
+          <button md-menu-item [routerLink]="['/admin', 'settings']">
+            <span class="fa fa-cogs"></span>
+            <span>Settings</span>
+          </button>
+
+          <button md-menu-item (click)="logout()">
+            <span class="fa fa-sign-out"></span>
+            <span>Logout</span>
+          </button>
+          
+        </md-menu>
+
+    </sktn-menubar-group>
+
+  </sktn-menubar>
+
+  <sktn-sidenav 
+    [sidenav]="sidenav" 
+    admin-sidebar>
+  </sktn-sidenav>
+
+</sktn-admin-panel>

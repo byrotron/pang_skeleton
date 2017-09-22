@@ -1,0 +1,9 @@
+vendor/
+logs/
+composer.lock
+nbproject/
+public_html/node_modules/
+public_html/.editorconfig
+public_html/dist/
+public_html/src/favicon.ico
+public_html/debug.log

@@ -1,0 +1,29 @@
+{
+  "database": {
+    "host": "localhost",
+    "user": "root",
+    "password": "",
+    "db_name": "angular_skeleton",
+    "driver":"mysqli"
+  },
+  "search_index": "angular_skeleton",
+  "mail": {
+    "use_smtp": true,
+    "host": "",
+    "port": "",
+    "username": "",
+    "password": "",
+    "admin_name": "",
+    "admin_email": ""
+  },
+  "time_zone": "Africa/Cairo",
+  "clean_error_log": {
+    "delete_all": false,
+    "limit": 2
+  },
+  "mail_exception_summary": {
+    "period": "week",
+    "interval": 1,
+    "short_list_amount": 10
+  }
+}
