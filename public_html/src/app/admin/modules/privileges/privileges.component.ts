@@ -1,6 +1,6 @@
 import { Component, } from '@angular/core';
 import { Router } from '@angular/router';
-import { SktnPrivilegesService } from './../../../skeleton';
+import { SktnPrivilegesService } from 'pangular';
 
 @Component({
   selector: 'app-privileges',

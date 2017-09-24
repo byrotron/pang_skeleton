@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from '@angular/material';
-import { SktnWebsitePanelModule, SktnMenubarModule } from './../skeleton';
+import { MatMenuModule } from '@angular/material';
+import { SktnWebsitePanelModule, SktnMenubarModule } from 'pangular';
 
 import { HomeModule } from './modules/home/home.module';
 import { LoginModule } from './modules/login/login.module';
@@ -15,6 +15,7 @@ import { WebsiteComponent } from './website.component';
 @NgModule({
   imports: [
     CommonModule,
+    MatMenuModule,
     RouterModule,
     SktnWebsitePanelModule,
     SktnMenubarModule,

@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { SktnAdminPanelService, SktnAuthService, ISktnResponse, ISktnSidenav } from './../skeleton';
+import { SktnAdminPanelService, SktnAuthService, ISktnResponse, ISktnSidenav } from 'pangular';
 import { admin_sidenav } from './admin.sidenav';
+import { TestComponent } from './test.component';
 
 @Component({
   selector: 'app-admin',
@@ -24,11 +25,22 @@ export class AdminComponent {
     this.sidenav = admin_sidenav;
   }
 
-  toggleSidenav() {
-    this.admin.toggleSidenav();
+  ngAfterViewInit(){
+    this.admin.action_bar.addComponent(TestComponent, {name: "Byron"})
   }
 
-  
+  toggleSidenav() {
+    this.admin.left_nav.toggle();
+  }
+
+  toggleRightSidenav() {
+    this.admin.right_nav.toggle();
+  }
+
+  toggleActionBar() {
+    this.admin.action_bar.toggle();
+  }
+
   logout() {
 
     this.auth.logout().subscribe(

@@ -1,0 +1,72 @@
+@import 'variables';
+
+.is-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  h4 {
+    flex: 1 1 auto;
+  }
+  
+  .close-form {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    opacity: 0.4;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-form:hover {
+    opacity: 1;
+  }
+
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+
+  .mat-dialog-content {
+    flex: 1 1 auto;
+  }
+
+  .mat-dialog-actions {
+    // position: absolute;
+    // bottom: 0;
+    // left: 0;
+    // width: 100%;
+    flex: 1 1 auto;
+  }
+
+  button.add {
+    color: $add;
+  }
+
+  button.edit {
+    color: $edit;
+  }
+
+  button.view {
+    color: $view;
+  }
+
+  button.remove {
+    color: $remove;
+  }
+
+  .custom-control-input:checked~.custom-control-indicator {
+    background-color: $secondary;
+  }
+
+  .custom-control {
+      margin-top: 0.5rem;
+  }
+
+}
+
+
+.element-full {
+  width: 100%;
+}

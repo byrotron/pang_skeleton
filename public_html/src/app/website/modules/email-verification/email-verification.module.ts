@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SktnEmailVerificationModule } from './../../../skeleton';
+import { SktnEmailVerificationModule } from 'pangular';
 import { EmailVerificationComponent } from './email-verification.component';
 
 @NgModule({

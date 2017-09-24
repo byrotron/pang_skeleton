@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
-import { FadeToggle } from './../skeleton/animations/animations';
-import { SktnWebsitePanelService, SktnAuthService, ISktnResponse } from './../skeleton';
+import { SktnWebsitePanelService, SktnAuthService, ISktnResponse, FadeToggle } from 'pangular';
 
 @Component({
   selector: 'app-website',

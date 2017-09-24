@@ -1,0 +1,103 @@
+
+.flex {
+  display: flex !important;
+}
+.fill-space {
+  flex: 1 1 auto;
+}
+.spacer {
+  height: 1rem;
+  width:100%;
+  background: none !important;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 1000;
+  background: white;
+}
+
+.is-limit .mat-select-trigger {
+  height: 2.1rem;
+  font-size: 0.9rem;
+}
+
+.mat-toolbar {
+  min-height: 0;
+}
+
+.mat-toolbar-row {
+  height: 2rem;
+}
+
+button.mat-raised-button {
+  min-width: 1px;
+}
+
+.hyperlink {
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.table-icon {
+  width: 2rem;
+  text-align: center;
+}
+
+.box.border-solid {
+    border:solid 1px;
+}
+
+.box.border-dotted {
+    border:dotted 1px;
+}
+
+.border {
+    border-width: 1px;
+}
+
+.border.thick {
+    border-width: 2px;
+}
+
+.border-right.border-dotted {
+    border-right-style: dotted;
+}
+.border-top.border-dotted {
+    border-top-style: dotted;
+}
+.border-left.border-dotted {
+    border-left-style: dotted;
+}
+.border-bottom.border-dotted {
+    border-bottom-style: dotted;
+}
+
+.border-right.border-solid {
+    border-right-style: solid;
+}
+.border-top.border-solid {
+    border-top-style: solid;
+}
+.border-left.border-solid {
+    border-left-style: solid;
+}
+.border-bottom.border-solid {
+    border-bottom-style: solid;
+}

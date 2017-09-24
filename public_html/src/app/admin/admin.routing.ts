@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { 
     SktnAuthGuard,
     SktnUserDetailComponent
-} from './../skeleton';
+} from 'pangular';
 
 import { AdminComponent } from './admin.component';
 import { AdminHomeComponent } from './modules/admin-home/admin-home.component';

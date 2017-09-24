@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SktnSettingsModule } from './../../../skeleton';
+import { SktnSettingsModule } from 'pangular';
 import { SettingsComponent } from './settings.component';
 
 @NgModule({

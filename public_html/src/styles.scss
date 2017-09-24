@@ -10,7 +10,5 @@ body {
   width:100%;
 }
 
-@import './sass/app/classes.scss';
-@import './sass/app/general.scss';
-@import './sass/app/forms';
-@import './sass/app/panel';
+@import './sass/classes.scss';
+@import './sass/general.scss';

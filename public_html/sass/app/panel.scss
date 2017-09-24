@@ -1,0 +1,42 @@
+@import 'variables';
+
+.is-panel {
+  width: 100%;
+  
+  .is-panel-header {
+    font-size: $header;
+    margin-bottom: 1rem;
+  }
+
+  .is-panel-content {
+
+    .is-panel-item p {
+      padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
+    }
+    
+    .is-panel-label {
+      color: grey;
+      font-style: italic;
+      margin-right: 0.5rem;
+    }
+  
+  }
+
+  .is-panel-footer {
+    display: flex;
+
+    button {
+      margin-right: 0.3rem;
+    }
+
+    button:last-of-type {
+      margin-right: 0;
+    }
+
+    span.edit {
+      color: $edit;
+    }
+  }
+
+}

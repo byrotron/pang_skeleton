@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 
-import { SktnAdminPanelService } from './../../../skeleton';
+import { SktnAdminPanelService } from 'pangular';
 
 @Component({
   selector: 'app-admin-home',

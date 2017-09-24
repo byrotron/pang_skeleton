@@ -1,49 +1,59 @@
 <sktn-admin-panel>
+  
+    <sktn-menubar background="#26a69a" color="white" fxLayout="row" admin-menubar>
+        
+      <sktn-menubar-group fxFlex fxLayout="row">
+  
+          <sktn-menubar-item type="icon" icon="fa-bars" (click)="toggleSidenav()">
+          </sktn-menubar-item>
 
-  <sktn-menubar admin-menubar>
-      
-    <sktn-menubar-group>
+          <sktn-menubar-item type="icon" icon="fa-bars" (click)="toggleRightSidenav()">
+          </sktn-menubar-item>
 
-        <sktn-menubar-item type="icon" icon="fa-bars" (click)="toggleSidenav()">
-        </sktn-menubar-item>
+          <sktn-menubar-item type="icon" icon="fa-bars" (click)="toggleActionBar()">
+            </sktn-menubar-item>
+  
+          <sktn-menubar-item type="text" text="Pang">
+          </sktn-menubar-item>
+  
+      </sktn-menubar-group>
+  
+      <sktn-menubar-group fxFlex fxLayout="row" fxLayoutAlign="end center">   
+  
+          <sktn-menubar-item type="icon" icon="fa-cog" [mdMenuTriggerFor]="menu"></sktn-menubar-item>
+  
+          <md-menu #menu="mdMenu" class="settings-menu">
+        
+            <button md-menu-item >
+              <span class="fa fa-user"></span>
+              <span>Profile</span>
+            </button>
+  
+            <button md-menu-item [routerLink]="['/admin', 'settings']">
+              <span class="fa fa-cogs"></span>
+              <span>Settings</span>
+            </button>
+  
+            <button md-menu-item (click)="logout()">
+              <span class="fa fa-sign-out"></span>
+              <span>Logout</span>
+            </button>
+            
+          </md-menu>
+  
+      </sktn-menubar-group>
+  
+    </sktn-menubar>
+  
+    <sktn-sidenav fxFlex="12%" position="left" admin-left-sidebar #leftsidenav>
 
-        <sktn-menubar-item type="text" text="Angular Skeleton">
-        </sktn-menubar-item>
+      <sktn-sidenav-item 
+        *ngFor="let item of sidenav.items"
+        [item]="item">  
+      </sktn-sidenav-item>
 
-    </sktn-menubar-group>
+    </sktn-sidenav>
 
-    <sktn-menubar-group>   
-
-        <sktn-menubar-item type="spacer"></sktn-menubar-item>
-
-        <sktn-menubar-item type="icon" icon="fa-cog" [mdMenuTriggerFor]="menu"></sktn-menubar-item>
-
-        <md-menu #menu="mdMenu" class="settings-menu">
-      
-          <button md-menu-item >
-            <span class="fa fa-user"></span>
-            <span>Profile</span>
-          </button>
-
-          <button md-menu-item [routerLink]="['/admin', 'settings']">
-            <span class="fa fa-cogs"></span>
-            <span>Settings</span>
-          </button>
-
-          <button md-menu-item (click)="logout()">
-            <span class="fa fa-sign-out"></span>
-            <span>Logout</span>
-          </button>
-          
-        </md-menu>
-
-    </sktn-menubar-group>
-
-  </sktn-menubar>
-
-  <sktn-sidenav 
-    [sidenav]="sidenav" 
-    admin-sidebar>
-  </sktn-sidenav>
-
-</sktn-admin-panel>
+    <sktn-sidenav fxFlex="12%" position="right" admin-right-sidebar #rightsidenav></sktn-sidenav>
+  
+  </sktn-admin-panel>

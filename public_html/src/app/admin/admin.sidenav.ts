@@ -1,4 +1,4 @@
-import { ISktnSidenav } from './../skeleton';
+import { ISktnSidenav } from 'pangular';
 
 export const admin_sidenav: ISktnSidenav = {
   items: [

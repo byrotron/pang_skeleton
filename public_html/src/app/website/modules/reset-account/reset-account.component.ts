@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import * as Skeleton from './../../../skeleton';
 
 @Component({
   selector: 'app-reset-account',

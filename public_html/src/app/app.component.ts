@@ -1,9 +1,7 @@
 import { Component } from '@angular/core';
 import { MdDialog, MdDialogRef } from '@angular/material';
 
-import * as Skeleton from './skeleton';
-
-import { SktnConnectionComponent, SktnAuthService, SktnAppService } from './skeleton';
+import { SktnConnectionComponent, SktnAuthService, SktnAppService } from 'pangular';
 
 @Component({
   selector: 'app-root',

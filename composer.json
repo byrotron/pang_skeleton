@@ -2,7 +2,13 @@
     "name": "byrotron/pang_app",
     "description": "PHP and Angular skeleton app",
     "type": "library",
-    "require": {},
-    "license": "MIT",
-    "minimum-stability": "dev"
+    "require": {
+        "byrotron/pangphp": "~0.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src"
+        }
+    },
+    "license": "MIT"
 }

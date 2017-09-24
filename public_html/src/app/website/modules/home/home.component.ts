@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SktnWebsitePanelService } from './../../../skeleton';
+import { SktnWebsitePanelService } from 'pangular';
 
 @Component({
   selector: 'app-home',

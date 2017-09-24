@@ -1,0 +1,39 @@
+.fill-space {
+  flex: 1 1 auto;
+}
+.spacer {
+  height: 1rem;
+  width:100%;
+  background: none !important;
+}
+.fullwidth {
+  width: 100%;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.loader {
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index: 1000;
+  background: white;
+}
+
+.hyperlink {
+  color: #2196F3;
+  cursor: pointer;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.table-icon {
+  width: 2rem;
+  text-align: center;
+}

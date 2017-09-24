@@ -3,7 +3,7 @@
     "host": "localhost",
     "user": "root",
     "password": "",
-    "db_name": "angular_skeleton",
+    "db_name": "pang",
     "driver":"mysqli"
   },
   "search_index": "angular_skeleton",

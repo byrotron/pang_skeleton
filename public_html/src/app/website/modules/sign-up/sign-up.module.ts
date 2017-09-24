@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SktnSignUpModule } from './../../../skeleton';
+import { SktnSignUpModule } from 'pangular';
 import { SignUpComponent } from './sign-up.component';
 
 @NgModule({

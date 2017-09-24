@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MaterialModule } from '@angular/material';
+import { MatMenuModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
-import { SktnAdminPanelModule, SktnSidenavModule, SktnMenubarModule } from './../skeleton';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { 
+  SktnAdminPanelModule, 
+  SktnSidenavModule, 
+  SktnMenubarModule 
+} from 'pangular';
 import { AdminHomeModule } from './modules/admin-home/admin-home.module';
 import { AdminComponent } from './admin.component';
 import { UsersModule } from './modules/users/users.module';
@@ -12,11 +17,14 @@ import { RolesModule } from './modules/roles/roles.module';
 import { ProfileComponent } from './modules/profile/profile.component';
 import { AdminRoutingModule } from './admin.routing';
 
+import { TestComponent } from './test.component';
+
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
-    MaterialModule,
+    MatMenuModule,
+    FlexLayoutModule,
     SktnAdminPanelModule,
     SktnMenubarModule,
     SktnSidenavModule,
@@ -27,9 +35,13 @@ import { AdminRoutingModule } from './admin.routing';
     PrivilegesModule,
     RolesModule
   ],
+  entryComponents: [
+    TestComponent
+  ],
   declarations: [
     AdminComponent,
-    ProfileComponent
+    ProfileComponent,
+    TestComponent
   ]
 })
 export class AdminModule { }
